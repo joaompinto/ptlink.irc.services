@@ -1,0 +1,9 @@
+On memoserv.modules
+        Add 
+	  ms_info
+	  ms_set
+          ms_save
+
+New options available:
+	memoserv
+		ExpireTime

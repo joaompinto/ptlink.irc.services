@@ -253,7 +253,7 @@ if test "$with_mysql" != "no"; then
     fi
   else
 
-    for i in lib lib/mysql; do
+    for i in lib lib/mysql lib64/mysql; do
       str="$MYSQL_DIR/$i/libmysqlclient.*"
       for j in `echo $str`; do
         if test -r $j; then
@@ -511,7 +511,6 @@ AC_OUTPUT(                     	\
   modules/Makefile		\
   modules/sql/Makefile		\
   modules/etc/Makefile		\
-  modules/compile.sh		\
   etc/Makefile			\
   utils/Makefile		\
 )

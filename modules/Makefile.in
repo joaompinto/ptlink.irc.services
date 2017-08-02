@@ -301,7 +301,7 @@ clean:
 lint:
 	lint -aacgprxhH ${CPPFLAGS} $(ALL_SRCS) >../lint.out
 
-distclean: clean compile.sh
+distclean: clean 
 	echo > .depend
 	${RM} -f Makefile .depend
 	@for i in $(CLEANDIRS); do \
